@@ -128,9 +128,9 @@ threescale_resources:
 - name: system-memcache
   kind: dc
   resources:
-    # limits: 
-    #   cpu: 250m
-    #   memory: 96Mi
+    limits: 
+      cpu: 300m
+      memory: 100Mi
     requests:
       cpu: 5m
       memory: 10Mi
@@ -149,7 +149,7 @@ threescale_resources:
       cpu: 15m
       memory: 30Mi
     limits:
-      #   cpu: 500m
+      cpu: 600m
       memory: 0
 - name: system-sidekiq
   kind: dc
@@ -173,9 +173,9 @@ threescale_resources:
 - name: zync
   kind: dc
   resources:
-    # limits: 
-    #   cpu: 1
-    #   memory: 512Mi
+    limits: 
+      cpu: 1
+      memory: 712Mi
     requests:
       cpu: 15m
       memory: 120M
@@ -186,17 +186,17 @@ threescale_resources:
     requests:
       cpu: 5m
       memory: 60M
-    # limits: 
-    #   cpu: 250m
-    #   memory: 2G
-# - name: zync-que
-#   resources:
-#     limits:
-#       cpu: 1
-#       memory: 512Mi
-#     requests:
-#       cpu: 250m
-#       memory: 250M
+    limits: 
+      cpu: 300m
+      memory: 2G
+- name: zync-que
+  resources:
+    limits:
+      cpu: 1
+      memory: 612Mi
+    requests:
+      cpu: 250m
+      memory: 300M
 
 # Routes
 threescale_route_system_developer: system-developer

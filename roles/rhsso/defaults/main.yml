@@ -68,8 +68,8 @@ rhsso_resources:
     resources:
       requests:
         memory: 500Mi
-      # limits: 
-      #   memory: 1Gi
+      limits: 
+        memory: 2Gi
   - name: sso-postgresql
     kind: dc
     resources:
